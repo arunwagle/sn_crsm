@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="ContractTask" max_length="40" name="x_snc_contracts_re_contracttask" sizeclass="93" type="collection">
+        <element display="true" label="Contract No" max_length="100" name="contract_no" read_only="true" type="string"/>
+        <element display="true" label="For Year" max_length="40" name="for_year" type="integer"/>
+        <element display="true" label="Submission No" max_length="1000" name="submission_no" read_only="true" type="string"/>
+        <element display="true" label="Submission Type" max_length="100" name="submission_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="treaty insurance" label="Document Type" mandatory="true" max_length="40" name="u_document_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Treaty Insurance" sequence="0" value="treaty insurance"/>
+                <element inactive_on_update="false" label="Auto Insurance" sequence="1" value="auto insurance"/>
+                <element inactive_on_update="false" label="Health Insurance." sequence="2" value="health insurance."/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>

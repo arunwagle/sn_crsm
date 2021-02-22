@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "schema_name": "${schema}",&#13;
+  "table_name": "${table}",&#13;
+  "limit": "${limit}"&#13;
+}</content>
+        <function_name>Get Remote Table Data</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Get Remote Contract Data  API [ Get Remote Table Data ]</qualified_name>
+        <rest_endpoint/>
+        <rest_message display_value="Get Remote Contract Data  API">81aa878b1b122810f5314111cd4bcb2d</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-17 22:39:14</sys_created_on>
+        <sys_id>a4e0d3c31b522810f5314111cd4bcbb4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Get Remote Table Data</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_rest_message_fn_a4e0d3c31b522810f5314111cd4bcbb4</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 01:54:51</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</application>
+        <file_path/>
+        <instance_id>2e426998db6ce450f37acac505961985</instance_id>
+        <instance_name>acfdemo2</instance_name>
+        <name>sys_rest_message_fn_a4e0d3c31b522810f5314111cd4bcbb4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content>{&#13;
+  "schema_name": "${schema}",&#13;
+  "table_name": "${table}",&#13;
+  "limit": "${limit}"&#13;
+}</content><function_name>Get Remote Table Data</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Get Remote Contract Data  API [ Get Remote Table Data ]</qualified_name><rest_endpoint/><rest_message display_value="Get Remote Contract Data  API">81aa878b1b122810f5314111cd4bcb2d</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>arun.wagle</sys_created_by><sys_created_on>2021-02-17 22:39:14</sys_created_on><sys_id>a4e0d3c31b522810f5314111cd4bcbb4</sys_id><sys_mod_count>13</sys_mod_count><sys_name>Get Remote Table Data</sys_name><sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package><sys_policy/><sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope><sys_update_name>sys_rest_message_fn_a4e0d3c31b522810f5314111cd4bcbb4</sys_update_name><sys_updated_by>arun.wagle</sys_updated_by><sys_updated_on>2021-02-18 01:54:51</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-207789213</payload_hash>
+        <record_name>Get Remote Table Data</record_name>
+        <reverted_from/>
+        <source>4d3dba351b5e2090f5314111cd4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 01:54:51</sys_created_on>
+        <sys_id>c74eb7cb1b562810f5314111cd4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177b2d8d8640000001</sys_recorded_at>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 01:54:51</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>0f4eb7cb8c562810faff5879a0e86b38</update_guid>
+        <update_guid_history>0f4eb7cb8c562810faff5879a0e86b38:-207789213,c7573703b7562810c5e0a9d7ad284d39:398293831,cd26bf4f001628106d6f1338b6338711:-149658123,9e163b4f8a1628108e95dce397690418:398293831,1265fb0f6d162810dcc16ef22866d6ea:-859149943,ef35bb0f7b16281064df89997d857ae5:426559803,c3c6574fba522810b39c7cfb1c6384eb:924640651,8376970fe4522810e7d841b6e9c3a0d7:1721281291,52b59f8b52522810997d55c18f9b21a4:-1772228713,9ce4134b855228109e7fbe9c33a0316d:-448290201,9e84d34b0252281054e9470c029002e8:-1625166442,b3045b0b1f522810903a8462bbe4d1ba:-1344025464,46c3dfc735522810ccc379fa3cfdbfff:-221329685,65815bc332522810dafb824d41de1ce6:-1344025464</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 02:08:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>15d69f65588c410c81f4377b4791ad44</sys_id>
+        <sys_metadata>a4e0d3c31b522810f5314111cd4bcbb4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Remote Table Data</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_parent display_value="GetRemoteContractDataAPI">81aa878b1b122810f5314111cd4bcb2d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_scope_delete display_value="">2a82f4e934c649d9a9957e76266f21b9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_a4e0d3c31b522810f5314111cd4bcbb4</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_a4e0d3c31b522810f5314111cd4bcbb4">c74eb7cb1b562810f5314111cd4bcb39</sys_update_version>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 02:08:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Contracts Review Use -  Total Cases View">04d4c4af1b12a810f5314111cd4bcb8b</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2021-02-18 13:01:48">88d4cc6f1b12a810f5314111cd4bcbb6</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 21:01:48</sys_created_on>
+        <sys_id>84d4c4af1b12a810f5314111cd4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>04d4c4af1b12a810f5314111cd4bcb8b</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_84d4c4af1b12a810f5314111cd4bcb8d</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 21:01:48</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</application>
+        <file_path/>
+        <instance_id>2e426998db6ce450f37acac505961985</instance_id>
+        <instance_name>acfdemo2</instance_name>
+        <name>sys_grid_canvas_pane_84d4c4af1b12a810f5314111cd4bcb8d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Contracts Review Use -  Total Cases View">04d4c4af1b12a810f5314111cd4bcb8b</grid_canvas><height>10</height><portal_widget display_value="Created 2021-02-18 13:01:48">88d4cc6f1b12a810f5314111cd4bcbb6</portal_widget><posx>0</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>arun.wagle</sys_created_by><sys_created_on>2021-02-18 21:01:48</sys_created_on><sys_id>84d4c4af1b12a810f5314111cd4bcb8d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>04d4c4af1b12a810f5314111cd4bcb8b</sys_name><sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package><sys_policy/><sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope><sys_update_name>sys_grid_canvas_pane_84d4c4af1b12a810f5314111cd4bcb8d</sys_update_name><sys_updated_by>arun.wagle</sys_updated_by><sys_updated_on>2021-02-18 21:01:48</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-213438156</payload_hash>
+        <record_name>04d4c4af1b12a810f5314111cd4bcb8b</record_name>
+        <reverted_from/>
+        <source>4d3dba351b5e2090f5314111cd4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 21:01:48</sys_created_on>
+        <sys_id>c0d4c4af1b12a810f5314111cd4bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177b6f2ea030000001</sys_recorded_at>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 21:01:48</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>c8d4c4af7c12a810aac83e8a1cb5738e</update_guid>
+        <update_guid_history>c8d4c4af7c12a810aac83e8a1cb5738e:-213438156</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-19 04:10:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>8ce2ace1080345fc81e1b8415bc63310</sys_id>
+        <sys_metadata>84d4c4af1b12a810f5314111cd4bcb8d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>04d4c4af1b12a810f5314111cd4bcb8b</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_scope_delete display_value="">2a82f4e934c649d9a9957e76266f21b9</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_84d4c4af1b12a810f5314111cd4bcb8d</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_84d4c4af1b12a810f5314111cd4bcb8d">c0d4c4af1b12a810f5314111cd4bcb8f</sys_update_version>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-19 04:10:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

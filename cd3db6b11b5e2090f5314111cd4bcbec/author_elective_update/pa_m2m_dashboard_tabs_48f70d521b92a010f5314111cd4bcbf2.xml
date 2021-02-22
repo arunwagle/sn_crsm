@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="DELETE">
+        <dashboard display_value="Contracts Review User Dashboard">f012011a1b52a010f5314111cd4bcb9c</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>2</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 04:42:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48f70d521b92a010f5314111cd4bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f012011a1b52a010f5314111cd4bcb9c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_48f70d521b92a010f5314111cd4bcbf2</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 04:42:40</sys_updated_on>
+        <tab display_value="Contracts Review Use - New Tab 2">c0f70d521b92a010f5314111cd4bcbf0</tab>
+    </pa_m2m_dashboard_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</application>
+        <file_path/>
+        <instance_id>2e426998db6ce450f37acac505961985</instance_id>
+        <instance_name>acfdemo2</instance_name>
+        <name>pa_m2m_dashboard_tabs_48f70d521b92a010f5314111cd4bcbf2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs"><pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE"><dashboard display_value="Contracts Review User Dashboard">f012011a1b52a010f5314111cd4bcb9c</dashboard><home>false</home><homepage/><order>2</order><sys_class_name>pa_m2m_dashboard_tabs</sys_class_name><sys_created_by>arun.wagle</sys_created_by><sys_created_on>2021-02-15 04:42:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>48f70d521b92a010f5314111cd4bcbf2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>f012011a1b52a010f5314111cd4bcb9c</sys_name><sys_overrides/><sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package><sys_policy/><sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope><sys_update_name>pa_m2m_dashboard_tabs_48f70d521b92a010f5314111cd4bcbf2</sys_update_name><sys_updated_by>arun.wagle</sys_updated_by><sys_updated_on>2021-02-15 04:42:40</sys_updated_on><tab display_value="Contracts Review Use - New Tab 2">c0f70d521b92a010f5314111cd4bcbf0</tab></pa_m2m_dashboard_tabs></record_update>]]></payload>
+        <payload_hash>-368369960</payload_hash>
+        <record_name>f012011a1b52a010f5314111cd4bcb9c</record_name>
+        <reverted_from/>
+        <source>4d3dba351b5e2090f5314111cd4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 04:42:40</sys_created_on>
+        <sys_id>c4f70d521b92a010f5314111cd4bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177a3ff67840000001</sys_recorded_at>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 04:42:40</sys_updated_on>
+        <type>Dashboard Tab</type>
+        <update_guid>ccf70d529a92a010b031f7e7fa2afaf3</update_guid>
+        <update_guid_history>ccf70d529a92a010b031f7e7fa2afaf3:-368369960</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Contracts Review User Dashboard">1af74d121b92a010f5314111cd4bcbf0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 04:42:49</sys_created_on>
+        <sys_db_object display_value="" name="pa_m2m_dashboard_tabs">pa_m2m_dashboard_tabs</sys_db_object>
+        <sys_id>4f597a6b8c20463ab6ba428cd0b0ca64</sys_id>
+        <sys_metadata>48f70d521b92a010f5314111cd4bcbf2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f012011a1b52a010f5314111cd4bcb9c</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_parent display_value="CRSM Dashboard - Manager View">f012011a1b52a010f5314111cd4bcb9c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_scope_delete display_value="">2a82f4e934c649d9a9957e76266f21b9</sys_scope_delete>
+        <sys_update_name>pa_m2m_dashboard_tabs_48f70d521b92a010f5314111cd4bcbf2</sys_update_name>
+        <sys_update_version display_value="pa_m2m_dashboard_tabs_48f70d521b92a010f5314111cd4bcbf2">c4f70d521b92a010f5314111cd4bcbf4</sys_update_version>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 04:42:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD70a6d4da611e601078f3765b763d4298</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>cd3db6b11b5e2090f5314111cd4bcbec</scope_name>
+        <serialized_content>{"FlowDesigner:FD70a6d4da611e601078f3765b763d4298":{},"FlowDesigner:FD70a6d4da611e601078f3765b763d4298.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Payload\",\"mandatory\":\"true\",\"uiUniqueId\":\"c838b2f2-f179-429a-a394-c2495d58d6dc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD70a6d4da611e601078f3765b763d4298\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 01:07:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>34a6d4da1b1e6010f5314111cd4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD70a6d4da611e601078f3765b763d4298</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_complex_object_34a6d4da1b1e6010f5314111cd4bcb98</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 01:07:16</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

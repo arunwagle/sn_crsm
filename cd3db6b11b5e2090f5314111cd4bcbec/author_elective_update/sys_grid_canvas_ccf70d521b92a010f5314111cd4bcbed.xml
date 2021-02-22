@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="DELETE">
+        <legacy_page display_value="PA Contracts Review Use - New Tab 2">0cf70d521b92a010f5314111cd4bcbec</legacy_page>
+        <name>PA Contracts Review Use - New Tab 2</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 04:42:40</sys_created_on>
+        <sys_id>ccf70d521b92a010f5314111cd4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Contracts Review Use - New Tab 2</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_grid_canvas_ccf70d521b92a010f5314111cd4bcbed</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 04:42:40</sys_updated_on>
+    </sys_grid_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</application>
+        <file_path/>
+        <instance_id>2e426998db6ce450f37acac505961985</instance_id>
+        <instance_name>acfdemo2</instance_name>
+        <name>sys_grid_canvas_ccf70d521b92a010f5314111cd4bcbed</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas"><sys_grid_canvas action="INSERT_OR_UPDATE"><legacy_page display_value="PA Contracts Review Use - New Tab 2">0cf70d521b92a010f5314111cd4bcbec</legacy_page><name>PA Contracts Review Use - New Tab 2</name><sys_class_name>sys_grid_canvas</sys_class_name><sys_created_by>arun.wagle</sys_created_by><sys_created_on>2021-02-15 04:42:40</sys_created_on><sys_id>ccf70d521b92a010f5314111cd4bcbed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PA Contracts Review Use - New Tab 2</sys_name><sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package><sys_policy/><sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope><sys_update_name>sys_grid_canvas_ccf70d521b92a010f5314111cd4bcbed</sys_update_name><sys_updated_by>arun.wagle</sys_updated_by><sys_updated_on>2021-02-15 04:42:40</sys_updated_on></sys_grid_canvas></record_update>]]></payload>
+        <payload_hash>-1083576500</payload_hash>
+        <record_name>PA Contracts Review Use - New Tab 2</record_name>
+        <reverted_from/>
+        <source>4d3dba351b5e2090f5314111cd4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 04:42:40</sys_created_on>
+        <sys_id>4cf70d521b92a010f5314111cd4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177a3ff670b0000001</sys_recorded_at>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 04:42:40</sys_updated_on>
+        <type>Grid Canvas</type>
+        <update_guid>44f70d525d92a010ae077ff4cb51ddef</update_guid>
+        <update_guid_history>44f70d525d92a010ae077ff4cb51ddef:-1083576500</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 04:42:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas">sys_grid_canvas</sys_db_object>
+        <sys_id>65dbcf178c3b46229f4c535659fd5649</sys_id>
+        <sys_metadata>ccf70d521b92a010f5314111cd4bcbed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Contracts Review Use - New Tab 2</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_scope_delete display_value="">2a82f4e934c649d9a9957e76266f21b9</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_ccf70d521b92a010f5314111cd4bcbed</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_ccf70d521b92a010f5314111cd4bcbed">4cf70d521b92a010f5314111cd4bcbef</sys_update_version>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 04:42:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

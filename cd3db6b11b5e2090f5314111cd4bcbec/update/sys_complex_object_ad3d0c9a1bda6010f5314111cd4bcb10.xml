@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe93d0c9aedda60104e82f258e96bdf10</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>cd3db6b11b5e2090f5314111cd4bcbec</scope_name>
+        <serialized_content>{"FlowDesigner:FDe93d0c9aedda60104e82f258e96bdf10":{"$COCollectionField":[{"Object":{}}],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe93d0c9aedda60104e82f258e96bdf10.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Payload\",\"mandatory\":\"false\",\"child_name\":\"Payload_child0\",\"uiUniqueId\":\"ad2b3d15-5321-4151-b691-16df09f24f2b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe93d0c9aedda60104e82f258e96bdf10\",\"child_label\":\"Payload_child0\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"\",\"sourceUiUniqueId\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a0633648-1307-4493-b21f-b63670665046\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 00:26:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad3d0c9a1bda6010f5314111cd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDe93d0c9aedda60104e82f258e96bdf10</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_complex_object_ad3d0c9a1bda6010f5314111cd4bcb10</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 00:26:06</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

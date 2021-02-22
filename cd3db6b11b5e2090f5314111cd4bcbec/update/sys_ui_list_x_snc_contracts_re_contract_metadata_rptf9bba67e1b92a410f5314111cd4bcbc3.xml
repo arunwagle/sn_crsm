@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_contracts_re_contract_metadata" version="2" view="RPTf9bba67e1b92a410f5314111cd4bcbc3">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>2b97331b1bde6810f5314111cd4bcb7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contract_no</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>ab97331b1bde6810f5314111cd4bcb7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>underwriter</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>2f97331b1bde6810f5314111cd4bcb7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cedant</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>af97331b1bde6810f5314111cd4bcb7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>broker</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>2397331b1bde6810f5314111cd4bcb7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>department</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>a397331b1bde6810f5314111cd4bcb7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>source_url</element>
+            <list_id display_value="x_snc_contracts_re_contract_metadata" element="NULL" name="x_snc_contracts_re_contract_metadata" parent="NULL" relationship="NULL" sys_domain="global" view="7dbbe6be1b92a410f5314111cd4bcba5">eb97331b1bde6810f5314111cd4bcb7a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_id>2797331b1bde6810f5314111cd4bcb7c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_contracts_re_contract_metadata</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>arun.wagle</sys_created_by>
+            <sys_created_on>2021-02-18 20:04:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb97331b1bde6810f5314111cd4bcb7a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_contracts_re_contract_metadata</sys_name>
+            <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_contracts_re_contract_metadata_RPTf9bba67e1b92a410f5314111cd4bcbc3</sys_update_name>
+            <sys_updated_by>arun.wagle</sys_updated_by>
+            <sys_updated_on>2021-02-18 20:04:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptf9bba67e1b92a410f5314111cd4bcbc3" name="RPTf9bba67e1b92a410f5314111cd4bcbc3">7dbbe6be1b92a410f5314111cd4bcba5</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

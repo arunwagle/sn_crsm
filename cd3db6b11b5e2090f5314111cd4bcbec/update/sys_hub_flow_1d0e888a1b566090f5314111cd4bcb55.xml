@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Scheduler to load contracts from external system into SN</description>
+        <internal_name>schedule_load_contracts_flow</internal_name>
+        <label_cache>[{"name":"9280b273-ce22-4268-977a-ba4b78a0deee.table_name","label":"7➛ContractTask Table","reference":"x_snc_contracts_re_contracttask","reference_display":"ContractTask Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9280b273-ce22-4268-977a-ba4b78a0deee.record","label":"7➛ContractTask Record","reference":"x_snc_contracts_re_contracttask","reference_display":"ContractTask Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"987c1e07-a5a3-48d4-b6de-49db19d441e8.table_name","label":"5➛ContractTask Table","reference":"x_snc_contracts_re_contracttask","reference_display":"ContractTask Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"987c1e07-a5a3-48d4-b6de-49db19d441e8.record","label":"5➛ContractTask Record","reference":"x_snc_contracts_re_contracttask","reference_display":"ContractTask Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1869aaff-6951-4dbc-82cb-e96b67eeb595.record.assigned_to.email","label":"3➛ContractTask Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1869aaff-6951-4dbc-82cb-e96b67eeb595.record.assigned_to","label":"3➛ContractTask Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_contracts_re_contracttask","column_name":"assigned_to"},{"name":"1869aaff-6951-4dbc-82cb-e96b67eeb595.record.contract_no","label":"3➛ContractTask Record➛Contract No","reference":"","reference_display":"Contract No","type":"string","base_type":"string","parent_table_name":"x_snc_contracts_re_contracttask","column_name":"contract_no"},{"name":"86a669d8-2bac-4881-8fc1-a9459cbb30c9.email","label":"9➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c346e03b-8578-4523-9856-58a4c34d81ac.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b4ef6ad1-7eb1-4aec-b763-d1c80b1a4762.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.sourceurl","label":"2➛root_array_object➛sourceurl","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.underwriter","label":"2➛root_array_object➛underwriter","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.broker","label":"2➛root_array_object➛broker","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.cedant","label":"2➛root_array_object➛cedant","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2c3ea3f2-6105-4076-8856-7fcd2703ea77.table_name","label":"8➛Contract Metadata Table","reference":"x_snc_contracts_re_contract_metadata","reference_display":"Contract Metadata Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2c3ea3f2-6105-4076-8856-7fcd2703ea77.record","label":"8➛Contract Metadata Record","reference":"x_snc_contracts_re_contract_metadata","reference_display":"Contract Metadata Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.document_type","label":"2➛root_array_object➛document_type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.submission_type","label":"2➛root_array_object➛submission_type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.submission_no","label":"2➛root_array_object➛submission_no","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item.contract_no","label":"2➛root_array_object➛contract_no","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"1869aaff-6951-4dbc-82cb-e96b67eeb595.table_name","label":"3➛ContractTask Table","reference":"x_snc_contracts_re_contracttask","reference_display":"ContractTask Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1869aaff-6951-4dbc-82cb-e96b67eeb595.record","label":"3➛ContractTask Record","reference":"x_snc_contracts_re_contracttask","reference_display":"ContractTask Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5211dbab-8186-4d51-badb-43bc92648439.item","label":"2➛root_array_object","reference_display":"root_array_object","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d98ff7e8-03eb-4257-9b0a-26ff836e8e46.contracts","label":"1➛contracts","reference_display":"contracts","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"836b5258-2f79-40bc-bfa4-16afd3ab9f7c"}},{"name":"14996f22-24eb-4ec3-af5d-b618c7206b50.contracts","label":"1➛contracts","reference_display":"contracts","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"836b5258-2f79-40bc-bfa4-16afd3ab9f7c"}},{"name":"d0fcaa7c-a059-4cb6-8561-471d149535ec.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0fcaa7c-a059-4cb6-8561-471d149535ec.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"902b8036-9947-4530-b6d0-ea1bffcab87d.payload","label":"1➛Payload","reference_display":"Payload","type":"array.object","base_type":"array.object","attributes":{"sourceId":"77b98f8a-288c-4284-b846-0da55b29f245","child_name":"root_array_object","uiUniqueId":"19ccb6a9-266c-440e-9517-a57f5931493a","uiTypeLabel":"Array.Object","co_type_name":"FDde15e416569e601092eca095d2fd8245","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"51c9a999-12e2-450f-8d6d-1b63398324e0","uiType":"array.object","child_type":"object","child_uiUniqueId":"5931db45-4876-4c35-a181-63b193c6e91c"}},{"name":"9280b273-ce22-4268-977a-ba4b78a0deee.record.assigned_to.email","label":"7➛ContractTask Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"9280b273-ce22-4268-977a-ba4b78a0deee.record.contract_no","label":"7➛ContractTask Record➛Contract No","reference":"","reference_display":"Contract No","type":"string","base_type":"string","parent_table_name":"x_snc_contracts_re_contracttask","column_name":"contract_no"},{"name":"64ab29f6-7174-4a44-bbef-06877d6bf2ff.Record","label":"9➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"64ab29f6-7174-4a44-bbef-06877d6bf2ff.Table","label":"9➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"64ab29f6-7174-4a44-bbef-06877d6bf2ff.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"64ab29f6-7174-4a44-bbef-06877d6bf2ff.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"88b3eaaa-520f-4ebd-9a03-d49e998d9996.record","label":"9➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"88b3eaaa-520f-4ebd-9a03-d49e998d9996.table_name","label":"9➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"987c1e07-a5a3-48d4-b6de-49db19d441e8.record.assigned_to.email","label":"5➛ContractTask Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"987c1e07-a5a3-48d4-b6de-49db19d441e8.record.contract_no","label":"5➛ContractTask Record➛Contract No","reference":"","reference_display":"Contract No","type":"string","base_type":"string","parent_table_name":"x_snc_contracts_re_contracttask","column_name":"contract_no"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Schedule Load Contracts Flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-14 05:51:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d0e888a1b566090f5314111cd4bcb55</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Schedule Load Contracts Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_hub_flow_1d0e888a1b566090f5314111cd4bcb55</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1d0e888a1b566090f5314111cd4bcb55"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1d0e888a1b566090f5314111cd4bcb55"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=1d0e888a1b566090f5314111cd4bcb55^sys_idNOT IN0a766c961b9e6010f5314111cd4bcb86,10a1fc5a1bde6010f5314111cd4bcb16,2191039b1b5a6810f5314111cd4bcb98,2191039b1b5a6810f5314111cd4bcb9e,4580431b1b5a6810f5314111cd4bcbc1,4580431b1b5a6810f5314111cd4bcbc9,50a1fc5a1bde6010f5314111cd4bcb0f,86766c961b9e6010f5314111cd4bcb82,d8a1fc5a1bde6010f5314111cd4bcb1d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0e766c961b9e6010f5314111cd4bcb85</block>
+        <comment>Iterate Payload</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>0a766c961b9e6010f5314111cd4bcb86</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>5211dbab-8186-4d51-badb-43bc92648439</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0a766c961b9e6010f5314111cd4bcb86"/>
+    <sys_element_mapping action="delete_multiple" query="id=0a766c961b9e6010f5314111cd4bcb86"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0a766c961b9e6010f5314111cd4bcb86</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>82766c961b9e6010f5314111cd4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 02:16:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{902b8036-9947-4530-b6d0-ea1bffcab87d.payload}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>8</order>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>10a1fc5a1bde6010f5314111cd4bcb16</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>2c3ea3f2-6105-4076-8856-7fcd2703ea77</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=10a1fc5a1bde6010f5314111cd4bcb16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>10a1fc5a1bde6010f5314111cd4bcb16</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>14a1fc5a1bde6010f5314111cd4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <value>x_snc_contracts_re_contract_metadata</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=10a1fc5a1bde6010f5314111cd4bcb16"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>10a1fc5a1bde6010f5314111cd4bcb16</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>dca1fc5a1bde6010f5314111cd4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>10a1fc5a1bde6010f5314111cd4bcb16</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>90a1fc5a1bde6010f5314111cd4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>contract_no={{5211dbab-8186-4d51-badb-43bc92648439.item.contract_no}}^cedant={{5211dbab-8186-4d51-badb-43bc92648439.item.cedant}}^broker={{5211dbab-8186-4d51-badb-43bc92648439.item.broker}}^underwriter={{5211dbab-8186-4d51-badb-43bc92648439.item.underwriter}}^source_url={{5211dbab-8186-4d51-badb-43bc92648439.item.sourceurl}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2591039b1b5a6810f5314111cd4bcb97</block>
+        <comment/>
+        <connected_to>02307971-0afd-4fb7-8968-e577daff8e42</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2191039b1b5a6810f5314111cd4bcb98</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>7fc0173f-7da8-4e75-9fd4-7fd45c47f89b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2191039b1b5a6810f5314111cd4bcb98"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update Assigned to &amp; Requested for field to Sharry Tibbit</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>7</order>
+        <parent_ui_id>7fc0173f-7da8-4e75-9fd4-7fd45c47f89b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2191039b1b5a6810f5314111cd4bcb9e</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>9280b273-ce22-4268-977a-ba4b78a0deee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2191039b1b5a6810f5314111cd4bcb9e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2191039b1b5a6810f5314111cd4bcb9e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>6191039b1b5a6810f5314111cd4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2191039b1b5a6810f5314111cd4bcb9e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>ad91039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>assigned_to={"display":"Sharry Tibbitt","value":"40bc32df1b1a6810f5314111cd4bcb57"}^u_requested_for={"display":"Sharry Tibbitt","value":"40bc32df1b1a6810f5314111cd4bcb57"}</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2191039b1b5a6810f5314111cd4bcb9e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2191039b1b5a6810f5314111cd4bcb9e</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>6991039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{1869aaff-6951-4dbc-82cb-e96b67eeb595.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2191039b1b5a6810f5314111cd4bcb9e</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>a591039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2191039b1b5a6810f5314111cd4bcb9e</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2d91039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4980431b1b5a6810f5314111cd4bcbc0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>4580431b1b5a6810f5314111cd4bcbc1</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>02307971-0afd-4fb7-8968-e577daff8e42</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4580431b1b5a6810f5314111cd4bcbc1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4580431b1b5a6810f5314111cd4bcbc1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>c980431b1b5a6810f5314111cd4bcbc4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:54:10</sys_updated_on>
+        <value>Underwriter = James Mirota</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4580431b1b5a6810f5314111cd4bcbc1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc1</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>4980431b1b5a6810f5314111cd4bcbc4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{5211dbab-8186-4d51-badb-43bc92648439.item.underwriter}}LIKEJames Mirota</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc1</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>8180431b1b5a6810f5314111cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:03:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update Assigned to &amp; Requested for field to James Mirota</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>5</order>
+        <parent_ui_id>02307971-0afd-4fb7-8968-e577daff8e42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>4580431b1b5a6810f5314111cd4bcbc9</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>987c1e07-a5a3-48d4-b6de-49db19d441e8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4580431b1b5a6810f5314111cd4bcbc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4580431b1b5a6810f5314111cd4bcbc9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>a591039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>assigned_to={"display":"James Mirota","value":"f3a8120e1bde2010f5314111cd4bcbd9"}^u_requested_for={"display":"James Mirota","value":"f3a8120e1bde2010f5314111cd4bcbd9"}</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4580431b1b5a6810f5314111cd4bcbc9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>ad91039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4580431b1b5a6810f5314111cd4bcbc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc9</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>6191039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{1869aaff-6951-4dbc-82cb-e96b67eeb595.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc9</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>a991039b1b5a6810f5314111cd4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc9</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2591039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>3</order>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>50a1fc5a1bde6010f5314111cd4bcb0f</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>1869aaff-6951-4dbc-82cb-e96b67eeb595</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=50a1fc5a1bde6010f5314111cd4bcb0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>50a1fc5a1bde6010f5314111cd4bcb0f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>d4a1fc5a1bde6010f5314111cd4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=50a1fc5a1bde6010f5314111cd4bcb0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>50a1fc5a1bde6010f5314111cd4bcb0f</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>9ca1fc5a1bde6010f5314111cd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>50a1fc5a1bde6010f5314111cd4bcb0f</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>54a1fc5a1bde6010f5314111cd4bcb11</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>contract_no={{5211dbab-8186-4d51-badb-43bc92648439.item.contract_no}}^submission_no={{5211dbab-8186-4d51-badb-43bc92648439.item.submission_no}}^submission_type={{5211dbab-8186-4d51-badb-43bc92648439.item.submission_type}}^u_document_type={{5211dbab-8186-4d51-badb-43bc92648439.item.document_type}}^state=13</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Load Contracts from Watson Discovery Action">f3cecc0e1b566090f5314111cd4bcb42</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>86766c961b9e6010f5314111cd4bcb82</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>902b8036-9947-4530-b6d0-ea1bffcab87d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=86766c961b9e6010f5314111cd4bcb82"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>86766c961b9e6010f5314111cd4bcb82</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>86766c961b9e6010f5314111cd4bcb85</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:49:21</sys_updated_on>
+        <value>{
+"query": "metadata.source.customHeaders.x-amz-meta-underwriter:James Mirota",
+"return_val": "metadata.source.customHeaders, metadata.source.SourceUrl, metadata.ingest_datetime",
+"highlight": false,
+"fetch_count": "25",
+"WDS_ENV_ID": "677a2c43-9885-4a07-88cb-347e16ce558d",
+"WDS_CONTRACT_COL_ID": "7df693c4-75ab-4625-9232-496889da5164",
+"bucket_name": "everest-contracts",
+"wds_api_key": "R6E3E0pPK-E81WHufM482WmZdrFOcszJj9tLPHPqwZWu",
+"wds_url": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/edd4e42f-bb6f-4f4b-adfe-1b19eacadeb4",
+"wds_api_version": "2019-04-30"
+}</value>
+        <variable display_value="">3bcecc0e1b566090f5314111cd4bcb57</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>86766c961b9e6010f5314111cd4bcb82</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>8e766c961b9e6010f5314111cd4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 02:16:26</sys_updated_on>
+        <value>/ibmai/list_contract_metadata?blocking=true</value>
+        <variable display_value="">3fcecc0e1b566090f5314111cd4bcb43</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>9</order>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>d8a1fc5a1bde6010f5314111cd4bcb1d</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>86a669d8-2bac-4881-8fc1-a9459cbb30c9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d8a1fc5a1bde6010f5314111cd4bcb1d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:59:00</sys_created_on>
+        <sys_id>10fd30121b52a010f5314111cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:59:00</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>28a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <value>Please review the Contract </value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 18:53:46</sys_created_on>
+        <sys_id>60876b1f1b5e6810f5314111cd4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">066bb6b57303230082999cfd7bf6a7c3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>64a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:13</sys_updated_on>
+        <value>&lt;p&gt;&lt;span style="white-space: pre;"&gt;Please review the Contract against the provided checklist.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="white-space: pre;"&gt;Once reviewed it will be sent to your manager for approval.&lt;/span&gt;&lt;/p&gt;</value>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d8a1fc5a1bde6010f5314111cd4bcb1d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>6ca1fc5a1bde6010f5314111cd4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>e0a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>a8a1fc5a1bde6010f5314111cd4bcb20</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{987c1e07-a5a3-48d4-b6de-49db19d441e8.record.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>20a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{987c1e07-a5a3-48d4-b6de-49db19d441e8.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:59:00</sys_created_on>
+        <sys_id>98fd30121b52a010f5314111cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:59:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>watermark_email</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 18:53:46</sys_created_on>
+        <sys_id>64876b1f1b5e6810f5314111cd4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{987c1e07-a5a3-48d4-b6de-49db19d441e8.record.contract_no}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1d0e888a1b566090f5314111cd4bcb55^sys_idNOT IN62bec4ca1b566090f5314111cd4bcbf6"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-14 05:54:14</sys_created_on>
+        <sys_id>62bec4ca1b566090f5314111cd4bcbf6</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=62bec4ca1b566090f5314111cd4bcbf6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>62bec4ca1b566090f5314111cd4bcbf6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-14 05:54:14</sys_created_on>
+        <sys_id>26be0c0e1b566090f5314111cd4bcb46</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:38:20</sys_updated_on>
+        <value>2021-02-14 22:40:00</value>
+        <variable display_value="">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1d0e888a1b566090f5314111cd4bcb55^sys_idNOT INd90e888a1b566090f5314111cd4bcb58"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1d0e888a1b566090f5314111cd4bcb55</id>
+        <name>Schedule Load Contracts Flow</name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-14 05:51:09</sys_created_on>
+        <sys_id>d90e888a1b566090f5314111cd4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-14 05:51:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1d0e888a1b566090f5314111cd4bcb55^sys_idNOT IN10a1fc5a1bde6010f5314111cd4bcb16,2191039b1b5a6810f5314111cd4bcb9e,4580431b1b5a6810f5314111cd4bcbc9,50a1fc5a1bde6010f5314111cd4bcb0f,86766c961b9e6010f5314111cd4bcb82,d8a1fc5a1bde6010f5314111cd4bcb1d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>8</order>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>10a1fc5a1bde6010f5314111cd4bcb16</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>2c3ea3f2-6105-4076-8856-7fcd2703ea77</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=10a1fc5a1bde6010f5314111cd4bcb16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>10a1fc5a1bde6010f5314111cd4bcb16</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>14a1fc5a1bde6010f5314111cd4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <value>x_snc_contracts_re_contract_metadata</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=10a1fc5a1bde6010f5314111cd4bcb16"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>10a1fc5a1bde6010f5314111cd4bcb16</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>dca1fc5a1bde6010f5314111cd4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>10a1fc5a1bde6010f5314111cd4bcb16</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>90a1fc5a1bde6010f5314111cd4bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>contract_no={{5211dbab-8186-4d51-badb-43bc92648439.item.contract_no}}^cedant={{5211dbab-8186-4d51-badb-43bc92648439.item.cedant}}^broker={{5211dbab-8186-4d51-badb-43bc92648439.item.broker}}^underwriter={{5211dbab-8186-4d51-badb-43bc92648439.item.underwriter}}^source_url={{5211dbab-8186-4d51-badb-43bc92648439.item.sourceurl}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update Assigned to &amp; Requested for field to Sharry Tibbit</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>7</order>
+        <parent_ui_id>7fc0173f-7da8-4e75-9fd4-7fd45c47f89b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2191039b1b5a6810f5314111cd4bcb9e</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>9280b273-ce22-4268-977a-ba4b78a0deee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2191039b1b5a6810f5314111cd4bcb9e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2191039b1b5a6810f5314111cd4bcb9e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>6191039b1b5a6810f5314111cd4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2191039b1b5a6810f5314111cd4bcb9e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>ad91039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>assigned_to={"display":"Sharry Tibbitt","value":"40bc32df1b1a6810f5314111cd4bcb57"}^u_requested_for={"display":"Sharry Tibbitt","value":"40bc32df1b1a6810f5314111cd4bcb57"}</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2191039b1b5a6810f5314111cd4bcb9e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2191039b1b5a6810f5314111cd4bcb9e</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>6991039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{1869aaff-6951-4dbc-82cb-e96b67eeb595.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2191039b1b5a6810f5314111cd4bcb9e</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>a591039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2191039b1b5a6810f5314111cd4bcb9e</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2d91039b1b5a6810f5314111cd4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Update Assigned to &amp; Requested for field to James Mirota</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>5</order>
+        <parent_ui_id>02307971-0afd-4fb7-8968-e577daff8e42</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>4580431b1b5a6810f5314111cd4bcbc9</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>987c1e07-a5a3-48d4-b6de-49db19d441e8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4580431b1b5a6810f5314111cd4bcbc9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4580431b1b5a6810f5314111cd4bcbc9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>a591039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>assigned_to={"display":"James Mirota","value":"f3a8120e1bde2010f5314111cd4bcbd9"}^u_requested_for={"display":"James Mirota","value":"f3a8120e1bde2010f5314111cd4bcbd9"}</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4580431b1b5a6810f5314111cd4bcbc9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>ad91039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4580431b1b5a6810f5314111cd4bcbc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc9</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>6191039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{1869aaff-6951-4dbc-82cb-e96b67eeb595.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc9</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>a991039b1b5a6810f5314111cd4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc9</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2591039b1b5a6810f5314111cd4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>3</order>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>50a1fc5a1bde6010f5314111cd4bcb0f</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>1869aaff-6951-4dbc-82cb-e96b67eeb595</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=50a1fc5a1bde6010f5314111cd4bcb0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>50a1fc5a1bde6010f5314111cd4bcb0f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>d4a1fc5a1bde6010f5314111cd4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=50a1fc5a1bde6010f5314111cd4bcb0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>50a1fc5a1bde6010f5314111cd4bcb0f</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>9ca1fc5a1bde6010f5314111cd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>50a1fc5a1bde6010f5314111cd4bcb0f</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:12</sys_created_on>
+        <sys_id>54a1fc5a1bde6010f5314111cd4bcb11</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:08:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>contract_no={{5211dbab-8186-4d51-badb-43bc92648439.item.contract_no}}^submission_no={{5211dbab-8186-4d51-badb-43bc92648439.item.submission_no}}^submission_type={{5211dbab-8186-4d51-badb-43bc92648439.item.submission_type}}^u_document_type={{5211dbab-8186-4d51-badb-43bc92648439.item.document_type}}^state=13</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Load Contracts from Watson Discovery Action">f3cecc0e1b566090f5314111cd4bcb42</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>86766c961b9e6010f5314111cd4bcb82</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>902b8036-9947-4530-b6d0-ea1bffcab87d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=86766c961b9e6010f5314111cd4bcb82"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>86766c961b9e6010f5314111cd4bcb82</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>86766c961b9e6010f5314111cd4bcb85</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:49:21</sys_updated_on>
+        <value>{
+"query": "metadata.source.customHeaders.x-amz-meta-underwriter:James Mirota",
+"return_val": "metadata.source.customHeaders, metadata.source.SourceUrl, metadata.ingest_datetime",
+"highlight": false,
+"fetch_count": "25",
+"WDS_ENV_ID": "677a2c43-9885-4a07-88cb-347e16ce558d",
+"WDS_CONTRACT_COL_ID": "7df693c4-75ab-4625-9232-496889da5164",
+"bucket_name": "everest-contracts",
+"wds_api_key": "R6E3E0pPK-E81WHufM482WmZdrFOcszJj9tLPHPqwZWu",
+"wds_url": "https://api.us-south.discovery.watson.cloud.ibm.com/instances/edd4e42f-bb6f-4f4b-adfe-1b19eacadeb4",
+"wds_api_version": "2019-04-30"
+}</value>
+        <variable display_value="">3bcecc0e1b566090f5314111cd4bcb57</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>86766c961b9e6010f5314111cd4bcb82</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>8e766c961b9e6010f5314111cd4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 02:16:26</sys_updated_on>
+        <value>/ibmai/list_contract_metadata?blocking=true</value>
+        <variable display_value="">3fcecc0e1b566090f5314111cd4bcb43</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <order>9</order>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>d8a1fc5a1bde6010f5314111cd4bcb1d</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>86a669d8-2bac-4881-8fc1-a9459cbb30c9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d8a1fc5a1bde6010f5314111cd4bcb1d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:59:00</sys_created_on>
+        <sys_id>10fd30121b52a010f5314111cd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:59:00</sys_updated_on>
+        <value>x_snc_contracts_re_contracttask</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>28a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <value>Please review the Contract </value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 18:53:46</sys_created_on>
+        <sys_id>60876b1f1b5e6810f5314111cd4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">066bb6b57303230082999cfd7bf6a7c3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d8a1fc5a1bde6010f5314111cd4bcb1d</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>64a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:13</sys_updated_on>
+        <value>&lt;p&gt;&lt;span style="white-space: pre;"&gt;Please review the Contract against the provided checklist.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="white-space: pre;"&gt;Once reviewed it will be sent to your manager for approval.&lt;/span&gt;&lt;/p&gt;</value>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d8a1fc5a1bde6010f5314111cd4bcb1d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>6ca1fc5a1bde6010f5314111cd4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>e0a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>a8a1fc5a1bde6010f5314111cd4bcb20</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{987c1e07-a5a3-48d4-b6de-49db19d441e8.record.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>20a1fc5a1bde6010f5314111cd4bcb21</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{987c1e07-a5a3-48d4-b6de-49db19d441e8.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:59:00</sys_created_on>
+        <sys_id>98fd30121b52a010f5314111cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:59:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>watermark_email</field>
+        <id>d8a1fc5a1bde6010f5314111cd4bcb1d</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 18:53:46</sys_created_on>
+        <sys_id>64876b1f1b5e6810f5314111cd4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:53:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{987c1e07-a5a3-48d4-b6de-49db19d441e8.record.contract_no}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d8a1fc5a1bde6010f5314111cd4bcb1d^sys_idNOT INa4a1fc5a1bde6010f5314111cd4bcb1f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_to</input_name>
+        <instance>d8a1fc5a1bde6010f5314111cd4bcb1d</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_to":{"scriptActive":false}}</script>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 03:05:13</sys_created_on>
+        <sys_id>a4a1fc5a1bde6010f5314111cd4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 03:05:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1d0e888a1b566090f5314111cd4bcb55^sys_idNOT IN0a766c961b9e6010f5314111cd4bcb86,2191039b1b5a6810f5314111cd4bcb98,4580431b1b5a6810f5314111cd4bcbc1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0e766c961b9e6010f5314111cd4bcb85</block>
+        <comment>Iterate Payload</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>0a766c961b9e6010f5314111cd4bcb86</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>5211dbab-8186-4d51-badb-43bc92648439</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0a766c961b9e6010f5314111cd4bcb86"/>
+    <sys_element_mapping action="delete_multiple" query="id=0a766c961b9e6010f5314111cd4bcb86"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0a766c961b9e6010f5314111cd4bcb86</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 02:16:26</sys_created_on>
+        <sys_id>82766c961b9e6010f5314111cd4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 02:16:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{902b8036-9947-4530-b6d0-ea1bffcab87d.payload}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2591039b1b5a6810f5314111cd4bcb97</block>
+        <comment/>
+        <connected_to>02307971-0afd-4fb7-8968-e577daff8e42</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:08:05</sys_created_on>
+        <sys_id>2191039b1b5a6810f5314111cd4bcb98</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>7fc0173f-7da8-4e75-9fd4-7fd45c47f89b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2191039b1b5a6810f5314111cd4bcb98"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4980431b1b5a6810f5314111cd4bcbc0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Schedule Load Contracts Flow">1d0e888a1b566090f5314111cd4bcb55</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5211dbab-8186-4d51-badb-43bc92648439</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>4580431b1b5a6810f5314111cd4bcbc1</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <ui_id>02307971-0afd-4fb7-8968-e577daff8e42</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4580431b1b5a6810f5314111cd4bcbc1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4580431b1b5a6810f5314111cd4bcbc1</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>c980431b1b5a6810f5314111cd4bcbc4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 18:54:10</sys_updated_on>
+        <value>Underwriter = James Mirota</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4580431b1b5a6810f5314111cd4bcbc1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc1</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>4980431b1b5a6810f5314111cd4bcbc4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 19:47:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{5211dbab-8186-4d51-badb-43bc92648439.item.underwriter}}LIKEJames Mirota</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4580431b1b5a6810f5314111cd4bcbc1</id>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 16:03:25</sys_created_on>
+        <sys_id>8180431b1b5a6810f5314111cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 16:03:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

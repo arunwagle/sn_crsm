@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Contract Exclusions Remote" max_length="40" name="x_snc_contracts_re_st_contract_exclusions_remote" sizeclass="0" type="collection">
+        <element display="true" label="broker" max_length="40" name="broker" type="string"/>
+        <element display="true" label="cedant" max_length="64" name="cedant" type="string"/>
+        <element display="true" label="Contract no" max_length="100" name="contract_no" type="string"/>
+        <element display="true" label="Contract type" max_length="40" name="contract_type" type="string"/>
+        <element display="true" label="effectivedate" max_length="40" name="effectivedate" type="string"/>
+        <element display="true" label="Exclusion peril std" max_length="40" name="exclusion_peril_std" type="string"/>
+        <element display="true" label="Treaty title" max_length="40" name="treaty_title" type="string"/>
+        <element display="true" label="Treaty year" max_length="40" name="treaty_year" type="integer"/>
+        <element display="true" label="underwriter" max_length="40" name="underwriter" type="string"/>
+    </element>
+</database>

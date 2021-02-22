@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Contract Metadata" max_length="40" name="x_snc_contracts_re_contract_metadata" sizeclass="94" type="collection">
+        <element display="true" label="Broker" max_length="1000" name="broker" type="string"/>
+        <element display="true" label="Cedant" max_length="1000" name="cedant" type="string"/>
+        <element display="true" label="Contract No" mandatory="true" max_length="100" name="contract_no" type="string"/>
+        <element display="true" label="Department" max_length="1000" name="department" type="string"/>
+        <element display="true" label="Ingest Date Time" max_length="40" name="ingest_date_time" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Source Url" max_length="1000" name="source_url" type="string"/>
+        <element display="true" label="Underwriter" max_length="1000" name="underwriter" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="IBM Cloud Function Contracts Connection">a29e0b031b522810f5314111cd4bcb95</basic_auth_profile>
+        <basic_auth_user/>
+        <description>Connect to the IBM Cloud function API</description>
+        <name>GetRemoteContractDataAPI</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://us-south.functions.appdomain.cloud/api/v1/web/OSNorth.Arun.Wagle.Org_FastStart/ibmai/list_db2_rows</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-17 22:13:58</sys_created_on>
+        <sys_id>81aa878b1b122810f5314111cd4bcb2d</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>GetRemoteContractDataAPI</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_rest_message_81aa878b1b122810f5314111cd4bcb2d</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 04:37:27</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

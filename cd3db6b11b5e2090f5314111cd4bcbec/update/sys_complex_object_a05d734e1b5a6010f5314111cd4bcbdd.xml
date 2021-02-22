@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDec5d734e815a6010c0d2f51788eea3dc</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>cd3db6b11b5e2090f5314111cd4bcbec</scope_name>
+        <serialized_content>{"FlowDesigner:FDec5d734e815a6010c0d2f51788eea3dc":{},"FlowDesigner:FDec5d734e815a6010c0d2f51788eea3dc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"data\",\"mandatory\":\"true\",\"uiUniqueId\":\"4b543fc2-013c-4605-be95-5e541a965993\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDec5d734e815a6010c0d2f51788eea3dc\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-14 23:16:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a05d734e1b5a6010f5314111cd4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDec5d734e815a6010c0d2f51788eea3dc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_complex_object_a05d734e1b5a6010f5314111cd4bcbdd</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-14 23:16:39</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

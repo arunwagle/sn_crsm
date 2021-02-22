@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd454d4d6121e6010a492ce8f515b601d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>cd3db6b11b5e2090f5314111cd4bcbec</scope_name>
+        <serialized_content>{"FlowDesigner:FDd454d4d6121e6010a492ce8f515b601d":{"$COCollectionField":[{"Object":{}}],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd454d4d6121e6010a492ce8f515b601d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"6dcba3f7-716f-403a-a948-927d947abff4\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Payload\",\"mandatory\":\"false\",\"child_name\":\"data\",\"uiUniqueId\":\"f24aea7c-ca65-4e9e-a374-14717de9d1ac\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd454d4d6121e6010a492ce8f515b601d\",\"child_label\":\"data\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c2b6c637-040c-4acc-af6b-47e08001ab87\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"ea8eca3a-c1a7-4950-ab21-86fc81876c0a\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-15 00:57:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9854d4d61b1e6010f5314111cd4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDd454d4d6121e6010a492ce8f515b601d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_complex_object_9854d4d61b1e6010f5314111cd4bcb1d</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-15 00:57:08</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

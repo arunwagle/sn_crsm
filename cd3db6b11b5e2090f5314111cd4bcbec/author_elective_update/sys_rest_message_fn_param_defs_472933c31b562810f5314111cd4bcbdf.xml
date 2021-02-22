@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="DELETE">
+        <name>schema_name</name>
+        <order>100</order>
+        <rest_message_function display_value="Get Remote Table Data">a4e0d3c31b522810f5314111cd4bcbb4</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 01:54:51</sys_created_on>
+        <sys_id>472933c31b562810f5314111cd4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>schema_name</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_472933c31b562810f5314111cd4bcbdf</sys_update_name>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 01:54:51</sys_updated_on>
+        <value>${schema_name}</value>
+    </sys_rest_message_fn_param_defs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</application>
+        <file_path/>
+        <instance_id>2e426998db6ce450f37acac505961985</instance_id>
+        <instance_name>acfdemo2</instance_name>
+        <name>sys_rest_message_fn_param_defs_472933c31b562810f5314111cd4bcbdf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs"><sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE"><name>schema_name</name><order>100</order><rest_message_function display_value="Get Remote Table Data">a4e0d3c31b522810f5314111cd4bcbb4</rest_message_function><sys_class_name>sys_rest_message_fn_param_defs</sys_class_name><sys_created_by>arun.wagle</sys_created_by><sys_created_on>2021-02-18 01:54:51</sys_created_on><sys_id>472933c31b562810f5314111cd4bcbdf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>schema_name</sys_name><sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package><sys_policy/><sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope><sys_update_name>sys_rest_message_fn_param_defs_472933c31b562810f5314111cd4bcbdf</sys_update_name><sys_updated_by>arun.wagle</sys_updated_by><sys_updated_on>2021-02-18 01:54:51</sys_updated_on><value>${schema_name}</value></sys_rest_message_fn_param_defs></record_update>]]></payload>
+        <payload_hash>-212856242</payload_hash>
+        <record_name>schema_name</record_name>
+        <reverted_from/>
+        <source>4d3dba351b5e2090f5314111cd4bcbbf</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 01:54:51</sys_created_on>
+        <sys_id>c34eb7cb1b562810f5314111cd4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177b2d8d7b50000001</sys_recorded_at>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 01:54:51</sys_updated_on>
+        <type>HTTP Query Parameters</type>
+        <update_guid>8b4eb7cbbe562810cb97f64557c23031</update_guid>
+        <update_guid_history>8b4eb7cbbe562810cb97f64557c23031:-212856242</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>arun.wagle</sys_created_by>
+        <sys_created_on>2021-02-18 02:08:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_param_defs">sys_rest_message_fn_param_defs</sys_db_object>
+        <sys_id>956d22e5f47949558b11394e28ff02a1</sys_id>
+        <sys_metadata>472933c31b562810f5314111cd4bcbdf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>schema_name</sys_name>
+        <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
+        <sys_scope_delete display_value="">2a82f4e934c649d9a9957e76266f21b9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_param_defs_472933c31b562810f5314111cd4bcbdf</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_param_defs_472933c31b562810f5314111cd4bcbdf">c34eb7cb1b562810f5314111cd4bcb32</sys_update_version>
+        <sys_updated_by>arun.wagle</sys_updated_by>
+        <sys_updated_on>2021-02-18 02:08:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
