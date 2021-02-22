@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Contract Info" section_id="fa2d63e41b26a050f5314111cd4bcbe7" sys_domain="global" table="x_snc_contracts_re_contracttask" version="3" view="">
+    <sys_ui_section caption="View" section_id="fa2d63e41b26a050f5314111cd4bcbe7" sys_domain="global" table="x_snc_contracts_re_contracttask" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cedant</element>
+            <element>u_file_attachment_4</element>
             <position>0</position>
             <sys_created_by>arun.wagle</sys_created_by>
-            <sys_created_on>2021-02-22 16:40:51</sys_created_on>
-            <sys_id>647f63e81b26a050f5314111cd4bcb27</sys_id>
+            <sys_created_on>2021-02-22 19:31:25</sys_created_on>
+            <sys_id>4f76903c1b2aa050f5314111cd4bcb2c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Contract Info" display_value="Contract Info" name="x_snc_contracts_re_contracttask" sys_domain="global" view="Default view">fa2d63e41b26a050f5314111cd4bcbe7</sys_ui_section>
+            <sys_ui_section caption="View" display_value="View" name="x_snc_contracts_re_contracttask" sys_domain="global" view="Default view">fa2d63e41b26a050f5314111cd4bcbe7</sys_ui_section>
             <sys_updated_by>arun.wagle</sys_updated_by>
-            <sys_updated_on>2021-02-22 16:40:51</sys_updated_on>
+            <sys_updated_on>2021-02-22 19:31:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Contract Info</caption>
+            <caption>View</caption>
             <header>false</header>
             <name>x_snc_contracts_re_contracttask</name>
             <roles/>
@@ -25,7 +25,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>fa2d63e41b26a050f5314111cd4bcbe7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>x_snc_contracts_re_contracttask</sys_name>
             <sys_overrides/>
             <sys_package display_value="Contracts Review Service Management" source="x_snc_contracts_re">cd3db6b11b5e2090f5314111cd4bcbec</sys_package>
@@ -33,7 +33,7 @@
             <sys_scope display_value="Contracts Review Service Management">cd3db6b11b5e2090f5314111cd4bcbec</sys_scope>
             <sys_update_name>sys_ui_section_fa2d63e41b26a050f5314111cd4bcbe7</sys_update_name>
             <sys_updated_by>arun.wagle</sys_updated_by>
-            <sys_updated_on>2021-02-22 16:30:54</sys_updated_on>
+            <sys_updated_on>2021-02-22 19:31:24</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

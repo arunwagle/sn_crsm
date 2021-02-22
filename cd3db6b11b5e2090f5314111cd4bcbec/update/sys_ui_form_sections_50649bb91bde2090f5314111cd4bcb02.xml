@@ -24,7 +24,7 @@
             <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_snc_contracts_re_contracttask" name="x_snc_contracts_re_contracttask" sys_domain="global" view="Default view">50649bb91bde2090f5314111cd4bcb02</sys_ui_form>
-            <sys_ui_section caption="Contract Info" display_value="Contract Info" name="x_snc_contracts_re_contracttask" sys_domain="global" view="Default view">fa2d63e41b26a050f5314111cd4bcbe7</sys_ui_section>
+            <sys_ui_section caption="View" display_value="View" name="x_snc_contracts_re_contracttask" sys_domain="global" view="Default view">fa2d63e41b26a050f5314111cd4bcbe7</sys_ui_section>
             <sys_updated_by>arun.wagle</sys_updated_by>
             <sys_updated_on>2021-02-22 16:30:54</sys_updated_on>
         </sys_ui_form_section>
